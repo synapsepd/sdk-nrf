@@ -1,3 +1,4 @@
+# This is the Synapse forked version of the nRF Connect SDK manifest file.
 # The west manifest file (west.yml) for the nRF Connect SDK (NCS).
 #
 # The per-workspace west configuration file, ncs/.west/config,
@@ -21,8 +22,8 @@ manifest:
     - name: ncs
       url-base: https://github.com/nrfconnect
     # Third-party repository sources:
-    - name: zephyrproject
-      url-base: https://github.com/zephyrproject-rtos
+    - name: synapsepd
+      url-base: https://github.com/synapsepd
     - name: throwtheswitch
       url-base: https://github.com/ThrowTheSwitch
     - name: armmbed
@@ -61,7 +62,8 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
       repo-path: sdk-zephyr
-      revision: v3.4.99-ncs1-1
+      revision: v3.4.99-ncs1-1-Tubes-1
+      remote: synapsepd
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
